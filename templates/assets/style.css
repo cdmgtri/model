@@ -1,0 +1,54 @@
+
+body {
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+}
+
+.badge {
+  margin-left: 6px;
+}
+
+.copy {
+  cursor: grab;
+}
+
+.copied {
+  cursor: grabbing
+}
+
+.header img {
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.header h1 {
+  position: relative;
+  font-size: 1.5rem;
+}
+
+summary {
+  font-size: 110%;
+  padding: 0.7em 0;
+}
+
+a[href] {
+  color: #00709A !important;
+}
+
+tr {
+  width: 100%;
+}
+
+details td:first-child {
+  padding-left: 16px;
+  width: 20%;
+}
+
+td {
+  word-break: break-all;
+}
+
+.list-group-item.active {
+  color: black;
+  background-color: #e9ecef;
+  border-color: #ced4da;
+}

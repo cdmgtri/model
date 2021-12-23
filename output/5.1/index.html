@@ -1,0 +1,599 @@
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>NIEM 5.1</title>
+
+  <link rel="stylesheet" type="text/css" href="../assets/style.css"/>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Breadcrumbs -->
+    <nav>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="https://niem.github.io">niem.github.io</a></li>
+        <li class="breadcrumb-item"><a href="https://niem.github.io/model">model</a></li>
+        <li class="breadcrumb-item active">5.1</li>
+      </ol>
+    </nav>
+
+    <!-- Header box with NIEM logo and header text -->
+    <div class="alert alert-info header">
+      <a href="https://niem.gov"> <img src="../assets/niem.png" class="pb-1"/> </a>
+      <h1>Release 5.1</h1>
+    </div>
+
+    <div id="contents">
+      <p>See the <a href="https://niem.github.io/niem-releases/5.1/">5.1 release page</a> for links to the release package, artifacts, and tools.</p><p><strong>Namespaces in this release</strong> <span class="badge badge-info">74</span></p>
+        <details open>
+          <summary>
+            Core
+            <span class='badge badge-info'>1</span>
+          </summary>
+
+          <table class='table table-hover table-sm'>
+            
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="nc">nc</a></td>
+            <td class="ns-def">NIEM Core.</td>
+          </tr>
+        
+          </table>
+        </details>
+      
+        <details open>
+          <summary>
+            Domain
+            <span class='badge badge-info'>15</span>
+          </summary>
+
+          <table class='table table-hover table-sm'>
+            
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="ag">ag</a></td>
+            <td class="ns-def">Agriculture</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="biom">biom</a></td>
+            <td class="ns-def">Biometric Schema Version 1.0</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="cbrn">cbrn</a></td>
+            <td class="ns-def">Chemical, Biological, Radiological, and Nuclear Domain</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="cyber">cyber</a></td>
+            <td class="ns-def">Cyber</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="em">em</a></td>
+            <td class="ns-def">Emergency Management</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="hs">hs</a></td>
+            <td class="ns-def">Human Services</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="im">im</a></td>
+            <td class="ns-def">Immigration</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="intel">intel</a></td>
+            <td class="ns-def">Intelligence</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="ip">ip</a></td>
+            <td class="ns-def">Infrastructure Protection</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="it">it</a></td>
+            <td class="ns-def">International Trade</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="j">j</a></td>
+            <td class="ns-def">Justice</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="m">m</a></td>
+            <td class="ns-def">Maritime</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="mo">mo</a></td>
+            <td class="ns-def">MilOps - Distribution A</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="scr">scr</a></td>
+            <td class="ns-def">The People Screening domain provides harmonized information sharing content within the Screening Portfolio of DHS.  The Screening namespace is initially being populated with person screening information for immigrant and non-immigrant person types who have been encountered and identified by the Screening Portfolio Components.  Screening expands on encounter-related NIEM elements currently included in the Immigration and Intelligence domains.</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="st">st</a></td>
+            <td class="ns-def">Surface Transportation</td>
+          </tr>
+        
+          </table>
+        </details>
+      
+        <details >
+          <summary>
+            Auxiliary
+            <span class='badge badge-info'>2</span>
+          </summary>
+
+          <table class='table table-hover table-sm'>
+            
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="cui">cui</a></td>
+            <td class="ns-def">Controlled Unclassified Information metadata</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="stat">stat</a></td>
+            <td class="ns-def">Statistics</td>
+          </tr>
+        
+          </table>
+        </details>
+      
+        <details >
+          <summary>
+            Code
+            <span class='badge badge-info'>38</span>
+          </summary>
+
+          <table class='table table-hover table-sm'>
+            
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="aamva_d20">aamva_d20</a></td>
+            <td class="ns-def">Motor vehicle administration codes from the Data Dictionary for Traffic Record Systems, maintained by AAMVA, the American Association of Motor Vehicle Administrators.</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="ag_codes">ag_codes</a></td>
+            <td class="ns-def">Agriculture codes</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="apco">apco</a></td>
+            <td class="ns-def">Association of Public-Safety Communications Officials (APCO) - International, Inc.</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="atf">atf</a></td>
+            <td class="ns-def">Bureau of Alcohol, Tobacco, and Firearms</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="bls">bls</a></td>
+            <td class="ns-def">US Bureau of Labor Statistics (BLS)</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="can">can</a></td>
+            <td class="ns-def">Canada Post Addressing Guidelines</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="cbrncl">cbrncl</a></td>
+            <td class="ns-def">NIEM CBRN domain Radiological and Nuclear Code List</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="commodity">commodity</a></td>
+            <td class="ns-def">Standard Classification of Transported Goods (SCTG) Commodity Codes</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="dea">dea</a></td>
+            <td class="ns-def">Drug Enforcement Administration (DEA) Controlled Substances</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="edxl_rm">edxl_rm</a></td>
+            <td class="ns-def">Emergency Data Exchange Language Resource Messaging (EDXL-RM) specification</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="fema">fema</a></td>
+            <td class="ns-def">Federal Emergency Management Agency</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="fips">fips</a></td>
+            <td class="ns-def">U.S. Census Bureau Federal Information Processing System (FIPS) codes for U.S. states and counties</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="genc">genc</a></td>
+            <td class="ns-def">Geopolitical Entities, Names, and Codes (GENC) country and country subdivision codes.  This is a profile of ISO 3166 that addresses unique U.S. government requirements.</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="have-codes">have-codes</a></td>
+            <td class="ns-def">Emergency Data Exchange Language (EDXL) Hospital AVailability Exchange (HAVE) codes</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="hazmat">hazmat</a></td>
+            <td class="ns-def">US Department of Transportation (DoT) Pipeline and Hazardous Materials Safety Administration (PHMSA) List of Hazardous Materials</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="hl7">hl7</a></td>
+            <td class="ns-def">Health Level Seven (HL-7) Fast Healthcare Interoperability Resources (FHIR)</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="iso_3166">iso_3166</a></td>
+            <td class="ns-def">ISO 3166 - Codes for the representation of names of countries and their subdivisions</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="iso_4217">iso_4217</a></td>
+            <td class="ns-def">ISO 4217 - Codes for the representation of currencies and funds</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="iso_639-3">iso_639-3</a></td>
+            <td class="ns-def">ISO 639-3: Codes for the representation of names of languages</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="itcodes">itcodes</a></td>
+            <td class="ns-def">NIEM International Trade domain codes</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="jc3iedm">jc3iedm</a></td>
+            <td class="ns-def">U.S. Department of Defense (DoD) Joint Consultation, Command and Control Information Exchange Data Model</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="jp2-0">jp2-0</a></td>
+            <td class="ns-def">DoD Joint Publication 2.0 - Joint Intelligence</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="jp3-52">jp3-52</a></td>
+            <td class="ns-def">JP3-52 Joint Airspace Control Codes</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="mmucc">mmucc</a></td>
+            <td class="ns-def">Model Minimum Uniform Crash Criteria</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="nces">nces</a></td>
+            <td class="ns-def">National Center for Education Statistics</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="ncic">ncic</a></td>
+            <td class="ns-def">FBI National Crime and Information Center (NCIC) codes</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="ndex">ndex</a></td>
+            <td class="ns-def">FBI National Data Exchange (N-DEx) Specification codes</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="nga">nga</a></td>
+            <td class="ns-def">National Geospatial-Intelligence Agency (NGA) Temporal Spatial Positioning Information (TSPI)</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="nlets">nlets</a></td>
+            <td class="ns-def">The International Justice & Public Safety Information Sharing Network (NLETS) User and Technical Guide</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="occs">occs</a></td>
+            <td class="ns-def">Construction Specifications Institute (CSI) OmniClass Table 11: Construction Entities by Function</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="opm">opm</a></td>
+            <td class="ns-def">US Office of Personnel Management (OPM)</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="sar">sar</a></td>
+            <td class="ns-def">Program Manager for the Information Sharing Environment (PM-ISE) Suspicious Activity Reporting (SAR)</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="stix">stix</a></td>
+            <td class="ns-def">Structured Threat Information Expression (STIX) codes</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="ucr">ucr</a></td>
+            <td class="ns-def">FBI Uniform Crime Reporting (UCR) codes</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="unece">unece</a></td>
+            <td class="ns-def">United Nations Economic Commission for Europe (UNECE), United Nations Centre for Trade Facilitation and Electronic Business (UN/CEFACT) measure codes</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="usda_fsa">usda_fsa</a></td>
+            <td class="ns-def">United Stated Department of Agriculture (USDA) Farm Service Agency (FSA)</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="usps">usps</a></td>
+            <td class="ns-def">United States Postal Service (USPS) Publication 28 - Postal Addressing Standards</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="xCard">xCard</a></td>
+            <td class="ns-def">vCard XML representation, IETF RFC 6351</td>
+          </tr>
+        
+          </table>
+        </details>
+      
+        <details >
+          <summary>
+            Adapter
+            <span class='badge badge-info'>4</span>
+          </summary>
+
+          <table class='table table-hover table-sm'>
+            
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="edxl-cap">edxl-cap</a></td>
+            <td class="ns-def">Common Alerting Protocol</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="edxl-de">edxl-de</a></td>
+            <td class="ns-def">Distribution Element</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="edxl-have">edxl-have</a></td>
+            <td class="ns-def">EDXL-HAVE specifies an XML document format that allows the communication of the status of a hospital, its services, and its resources. These include bed capacity and availability, emergency department status, available service coverage, and the status of a hospital's facility and operations.</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="geo">geo</a></td>
+            <td class="ns-def">NIEM adapter types for geospatial components from GML 3.2.1, a subset of which is included with this release as an external standard.  The Geography Markup Language (GML) is defined by the Open Geospatial Consortium (OGC).</td>
+          </tr>
+        
+          </table>
+        </details>
+      
+        <details >
+          <summary>
+            Proxy
+            <span class='badge badge-info'>1</span>
+          </summary>
+
+          <table class='table table-hover table-sm'>
+            
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="niem-xs">niem-xs</a></td>
+            <td class="ns-def">Proxy types that carry dictionary metadata and have XML data type simple contents.</td>
+          </tr>
+        
+          </table>
+        </details>
+      
+        <details >
+          <summary>
+            Utility
+            <span class='badge badge-info'>4</span>
+          </summary>
+
+          <table class='table table-hover table-sm'>
+            
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="appinfo">appinfo</a></td>
+            <td class="ns-def">Elements for use within xsd:appinfo to indicate information supporting the data model underlying NIEM.</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="cli">cli</a></td>
+            <td class="ns-def">Definitions for the use of the NIEM Code Lists Specification, version 1.0, in XML message instances.</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="clsa">clsa</a></td>
+            <td class="ns-def">This schema provides annotations for connecting content defined within an XML Schema document to the content of code lists.</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="structures">structures</a></td>
+            <td class="ns-def">Schema constructs for use by NIEM-conformant schemas to provide consistent definitions and functionality.</td>
+          </tr>
+        
+          </table>
+        </details>
+      
+        <details >
+          <summary>
+            Built-in
+            <span class='badge badge-info'>1</span>
+          </summary>
+
+          <table class='table table-hover table-sm'>
+            
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="xs">xs</a></td>
+            <td class="ns-def">The XML Schema definition language, which offers facilities for describing the structure and constraining the contents of XML documents.</td>
+          </tr>
+        
+          </table>
+        </details>
+      
+        <details >
+          <summary>
+            External
+            <span class='badge badge-info'>8</span>
+          </summary>
+
+          <table class='table table-hover table-sm'>
+            
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="cap">cap</a></td>
+            <td class="ns-def">Common Alerting Protocol (CAP) is a simple but general format for exchanging effective warning messages based on best practices identified in academic research and real-world experience.</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="de">de</a></td>
+            <td class="ns-def">This Distribution Element specification describes a standard message distribution framework for data sharing among emergency information systems using the XML-based Emergency Data Exchange Language (EDXL). This format may be used over any data transmission system, including but not limited to the SOAP HTTP binding.</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="gml">gml</a></td>
+            <td class="ns-def">Geography Markup Language (GML) version 3.2.1 schemas.  See http://www.opengeospatial.org OGC document 07-036 for documentation: "The Geography Markup Language (GML) was originally developed within the Open Geospatial Consortium, Inc. (OGC). ISO 19136 was prepared by ISO/TC 211 jointly with the OGC."  See http://schemas.opengis.net/gml/ for schemas.</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="have">have</a></td>
+            <td class="ns-def">Hospital Availability Exchange (HAVE)</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="xhtml">xhtml</a></td>
+            <td class="ns-def">The Extensible HyperText Markup Language, a family of current and future document types and modules that reproduce, subset, and extend HTML 4.</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="xlink">xlink</a></td>
+            <td class="ns-def">GML 3.0 candidate xlinks schema. Copyright (c) 2001 OGC, All Rights Reserved.</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="xls">xls</a></td>
+            <td class="ns-def">A profile of OpenGeospatialConsortium (OpenGIS, OGC) OpenLS (Location Services) version 1.1 schemas. A profile of OpenGeospatialConsortium (OpenGIS, OGC) OpenLS (Location Services) version 1.1 schemas that have been edited to use GML version 3.2.1 schemas instead of the GML version 3.0 schemas that were current when OpenLS version 1.1 was promulgated.  See http://www.opengeospatial.org for documentation, http://schemas.opengis.net/ols/ for schemas.</td>
+          </tr>
+        
+
+          <tr class="ns">
+            <td class="ns-prefix font-weight-bold"><a href="xml">xml</a></td>
+            <td class="ns-def">The XML Namespace</td>
+          </tr>
+        
+          </table>
+        </details>
+      
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <br/> <br/>
+      <div id="scrollTop">
+        <a href="#">^ Return to top of page</a> <br/>
+      </div>
+      <hr/>
+      <p>
+        <span><strong>National Information Exchange Model (NIEM)</strong></span>
+        <span class="float-right">
+          <a class="pr-3" href="https://niem.gov">NIEM.gov</a>
+          <a class="pr-30" href="https://www.niem.gov/contact">Contact Us</a>
+        </span>
+      </p>
+    </footer>
+
+  </div>
+
+  <script src="../assets/page.js"></script>
+
+</body>
+
+</html>
