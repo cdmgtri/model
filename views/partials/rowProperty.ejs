@@ -1,0 +1,6 @@
+
+<% if (property.isAbstract) { %>
+  <%- await include("rowPropertyAbstract", {property});  %>
+<% } else { %>
+  <%- await include("rowPropertyConcrete", {property});  %>
+<% } %>

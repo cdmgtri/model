@@ -6,15 +6,6 @@ let { NamespaceDef, Namespace, PropertyDef, Property, TypeDef, Type } = require(
 class Utils {
 
   /**
-   * Capitalize the first letter of the given text
-   *
-   * @param {string} text
-   */
-  static capitalizeFirstLetter(text) {
-    return text[0].toUpperCase() + text.slice(1);
-  }
-
-  /**
    * Send release HTML files in the output directory to the trash / recycle bin
    * @param {string} releaseKey
    */
@@ -25,10 +16,6 @@ class Utils {
   static copyAssets() {
     Utils.clearOutputReleaseFolder("assets");
     fs.copySync("templates/assets", "output/assets");
-  }
-
-  static loadTemplate() {
-    return fs.readFileSync("templates/template.html", "utf-8");
   }
 
   /**

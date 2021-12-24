@@ -1,10 +1,10 @@
 
 let { NIEM, ReleaseDef, NamespaceDef, Namespace, LocalTermDef, PropertyDef, TypeDef } = require("niem-model");
 
-let InterfaceHTML = require("./interface");
+let Templates = require("./templates");
 let Utils = require("./utils");
 
-class NamespaceHTML extends InterfaceHTML {
+class NamespaceHTML {
 
   /**
    * @TODO Use the release key to determine the correct version of NIEM XSD and other classes to use
@@ -13,11 +13,7 @@ class NamespaceHTML extends InterfaceHTML {
    */
   constructor(namespace) {
 
-    super(namespace.releaseKey);
-
-    this.title = namespace.prefix;
-    this.header = `Namespace ${namespace.prefix}`;
-    this.outputPath = `${namespace.releaseKey}/${namespace.prefix}/index.html`;
+    this.releaseKey = namespace.releaseKey;
 
     this.namespace = namespace;
 
@@ -41,30 +37,37 @@ class NamespaceHTML extends InterfaceHTML {
     this.localTerms = await this.namespace.localTerms.find();
   }
 
-  getContents() {
+  async write() {
 
     let contents = "";
 
-    contents += this.getBasicInfo();
-    contents += this.getProperties();
-
-    return contents;
-
-  }
-
-  /**
-   * Print basic namespace fields
-   */
-  getBasicInfo() {
-
-    return Utils.stackedTable([
+    contents += await Templates.loadStackedTable({items: [
       { label: "Definition", value: this.namespace.definition},
       { label: "Prefix", value: this.namespace.prefix},
       { label: "File name", value: this.namespace.fileName},
       { label: "Style", value: this.namespace.style},
-      { label: "URI", value: this.namespace.uri, url: this.namespace.uri},
-    ]);
+      { label: "URI", value: this.namespace.uri, url: this.namespace.uri}
+    ]});
 
+    contents += this.getProperties();
+
+    await Templates.buildPage(`${this.releaseKey}/${this.namespace.prefix}/index.html`, {
+      title: this.namespace.prefix,
+      header: `Namespace ${this.namespace.prefix}`,
+      contents
+    });
+
+  }
+
+  /**
+   * @param {NamespaceDef[]} namespaces
+   */
+   static async writeList(namespaces) {
+    for (let namespace of namespaces) {
+      let namespaceHTML = new NamespaceHTML(namespace);
+      await namespaceHTML.init();
+      await namespaceHTML.write();
+    }
   }
 
   getProperties() {
@@ -73,7 +76,7 @@ class NamespaceHTML extends InterfaceHTML {
       <details>
         <summary>
           <strong>Properties</strong>
-          <span class="badge badge-info">${}</span>
+          <span class="badge badge-info badge-pill">${"#"}</span>
         </summary>
       </details>
     `;
@@ -108,19 +111,6 @@ class NamespaceHTML extends InterfaceHTML {
         </span>
       </small>
     `
-  }
-
-
-
-  /**
-   * @param {NamespaceDef[]} namespaces
-   */
-  static async writeList(namespaces) {
-    for (let namespace of namespaces) {
-      let namespaceHTML = new NamespaceHTML(namespace);
-      await namespaceHTML.init();
-      await namespaceHTML.write();
-    }
   }
 
 }

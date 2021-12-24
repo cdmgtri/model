@@ -1,0 +1,16 @@
+
+<div class="card">
+  <table class="table table-sm">
+    <% items.forEach(item => { %>
+      <tr>
+        <td class="stacked-table-label"><%= item.label %></td>
+        <td class="stacked-table-value">
+          <span class="copy" data-toggle="popover" data-placement="right"><%= item.value %></span>
+          <% if (item.url) { %>
+            <a href="<%- item.value %>" target="_blank"> <i class="fa fa-external-link"></i>
+          <% } %>
+        </td>
+      </tr>
+    <% }) %>
+  </table>
+</div>

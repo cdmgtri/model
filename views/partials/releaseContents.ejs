@@ -1,0 +1,31 @@
+
+<!-- Release resources -->
+<p>See the <a href="https://niem.github.io/niem-releases/<%= releaseKey %>/"><%= releaseKey %> release page</a> for links to the release package, artifacts, and tools.</p>
+
+<!-- Namespaces heading -->
+<p><strong>Namespaces in this release</strong> <span class="badge badge-info"><%= namespaces.length %></span></p>
+
+<% for (let namespaceStyle of namespaceStyles) { %>
+
+  <% let filteredNamespaces = namespaces.filter( namespace => namespace.style == namespaceStyle ); %>
+
+  <% let open = namespaceStyle == "core" || namespaceStyle == "domain" ? "open" : ""; %>
+  <% let style = namespaceStyle[0].toUpperCase() + namespaceStyle.slice(1) %>
+
+  <details <%= open %> >
+    <summary>
+      <%= style %>
+      <span class='badge badge-info'> <%= filteredNamespaces.length %> </span>
+    </summary>
+
+    <table class='table table-hover table-sm'>
+      <% for (let ns of filteredNamespaces) { %>
+        <tr class="ns">
+          <td class="ns-prefix font-weight-bold"><a href="<%= ns.prefix %>"><%= ns.prefix %></a></td>
+          <td class="ns-def"><%= ns.definition %></td>
+        </tr>
+      <% } %>
+    </table>
+  </details>
+
+<% } %>

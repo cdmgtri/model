@@ -2,21 +2,18 @@
 let fs = require("fs-extra");
 let { NIEM, ReleaseDef, NamespaceDef, Namespace, PropertyDef, TypeDef } = require("niem-model");
 
-let InterfaceHTML = require("./interface");
 let NamespaceHTML = require("./namespace");
-let Utils = require("./utils");
+let Templates = require("./templates");
 
-class ReleaseHTML extends InterfaceHTML {
+class ReleaseHTML {
 
   /**
    * @param {string} releaseKey
    */
   constructor(releaseKey) {
 
-    super(releaseKey);
+    this.releaseKey = releaseKey;
 
-    this.title = `NIEM ${releaseKey}`;
-    this.header = `Release ${releaseKey}`;
     this.outputPath = `${releaseKey}/index.html`;
 
     this.niem = new NIEM();
@@ -51,7 +48,21 @@ class ReleaseHTML extends InterfaceHTML {
   }
 
   async write() {
-    await super.write();
+
+    // Get a unique list of namespace styles in this release
+    let namespaceStyles = [...new Set( this.namespaces.sort(Namespace.sortByStyle).map( ns => ns.style ) )];
+
+    let contents = await ReleaseHTML.loadPartial_ReleaseContents({
+      releaseKey: this.releaseKey,
+      namespaces: this.namespaces,
+      namespaceStyles
+    });
+
+    await Templates.buildPage(`${this.releaseKey}/index.html`, {
+      title: `NIEM ${this.releaseKey}`,
+      header: `Release ${this.releaseKey}`,
+      contents: contents
+    });
 
     await NamespaceHTML.writeList(this.namespaces);
 
@@ -61,49 +72,12 @@ class ReleaseHTML extends InterfaceHTML {
 
   }
 
-  getContents() {
-
-    let contents = "";
-
-    // Release resources
-    contents += `<p>See the <a href="https://niem.github.io/niem-releases/${this.releaseKey}/">${this.releaseKey} release page</a> for links to the release package, artifacts, and tools.</p>`;
-
-    // Namespaces heading
-    contents += `<p><strong>Namespaces in this release</strong> <span class="badge badge-info">${this.namespaces.length}</span></p>`;
-
-    // Get a unique list of namespace styles in this release
-    let namespaceStyles = [...new Set( this.namespaces.sort(Namespace.sortByStyle).map( ns => ns.style ) )];
-
-    for (let namespaceStyle of namespaceStyles) {
-      let filteredNamespaces = this.namespaces.filter( namespace => namespace.style == namespaceStyle );
-
-      let rows = filteredNamespaces.map( ns => {
-        return `
-          <tr class="ns">
-            <td class="ns-prefix font-weight-bold"><a href="${ns.prefix}">${ns.prefix}</a></td>
-            <td class="ns-def">${ns.definition}</td>
-          </tr>
-        `;
-      });
-
-      let open = namespaceStyle == "core" || namespaceStyle == "domain" ? "open" : "";
-
-      contents += `
-        <details ${open}>
-          <summary>
-            ${Utils.capitalizeFirstLetter(namespaceStyle)}
-            <span class='badge badge-info'>${filteredNamespaces.length}</span>
-          </summary>
-
-          <table class='table table-hover table-sm'>
-            ${rows.join("\n")}
-          </table>
-        </details>
-      `;
-    }
-
-    return contents;
-
+  /**
+   * @param {{releaseKey: string, namespaces: NamespaceDef[], namespaceStyles: string[]}} data
+   */
+  static async loadPartial_ReleaseContents(data) {
+    let template = await Templates.compile("partials/releaseContents.ejs");
+    return template(data);
   }
 
 }
