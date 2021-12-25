@@ -25,9 +25,17 @@ body {
   font-size: 1.5rem;
 }
 
-summary {
-  font-size: 110%;
-  padding: 0.7em 0;
+.summary-heading {
+  font-weight: bolder;
+}
+
+.div-subProperties {
+  padding-left: 16px;
+  padding-top: 10px;
+}
+
+.div-subProperties .summary-heading {
+  font-weight: normal !important;
 }
 
 a[href] {
@@ -45,6 +53,10 @@ details td:first-child {
 
 td {
   word-break: break-all;
+}
+
+.td-stacked-label {
+  padding-left: 20px !important;
 }
 
 .list-group-item.active {

@@ -1,0 +1,11 @@
+
+<% if (components.length > 0) { %>
+  <%# Get component links %>
+  <% let listItems = []; %>
+  <% for (let component of components) { %>
+    <% let listItem = await include("listComponent", {component, functions}) %>
+    <% listItems.push(listItem) %>
+  <% } %>
+
+  <%- await include("objectList", {label, open, items: listItems, functions})  %>
+<% } %>

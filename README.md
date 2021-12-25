@@ -11,9 +11,12 @@ This projects generates model HTML pages to allow users to browse NIEM content.
 - [x] Regenerate on file changes
 - [x] Get file top button working
 - [x] Update template mechanism
-- [ ] Fix copy
-- [ ] Fix async templates
-- [ ] Add diffs to 5.0
+- [x] Fix async templates
+- [x] Fix namespace property list alignment issue (mismatched tags?)
+- [x] Fix available properties
+- [ ] Cache type-contains templates to reuse for namespace component lists, property and type pages
+- [ ] Set up ejs-lint
+- [ ] Add 5.1 diffs from 5.0
 
 **Release**
 

@@ -1,6 +1,81 @@
 
-<% if (property.isAbstract) { %>
-  <%- await include("rowPropertyAbstract", {property});  %>
-<% } else { %>
-  <%- await include("rowPropertyConcrete", {property});  %>
-<% } %>
+<% let substitutions = await property.substitutions(); %>
+
+<details>
+
+  <%# Details summary line %>
+  <summary>
+    <strong><a href="<%= functions.componentLink(property) %>"><%= property.qname %></a></strong>
+    <small>
+      <% if (property.isAbstract) { %>
+        <%# Abstract property summary: Property (abstract) #substitutions %>
+        <span> (abstract) </span>
+        <% if (substitutions.length > 0) { %>
+          <% let substitutionLabel = substitutions.length == 1 ? "substitution" : "substitutions" %>
+          <span class="badge badge-secondary badge-pill">
+            <%= substitutions.length %> <%= substitutionLabel %>
+          </span>
+        <% } %>
+
+      <% } else { %>
+        <%# Concrete property summary: Property (type) %>
+        <span> (type <%= property.typeQName %> )</span>
+      <% } %>
+
+    </small>
+  </summary>
+  <br/>
+
+  <%# Definition %>
+  <p class="copy"><%= property.definition %></p>
+
+  <%# Substitution group %>
+  <% if (property.groupQName) { %>
+    <% let group = await property.group() %>
+    <% let groupLink = functions.componentLink(group) %>
+    <p>This property is substitutable for property <a href="<%= groupLink %>"><%= group.qname %></a>.</p>
+  <% } %>
+
+  <%# Substitutions %>
+  <%- await include("listComponents", {label: "Substitutions", open: "", functions, components: substitutions})  %>
+
+  <% if (true) { %>
+
+    <%# Available sub-properties %>
+    <% let containedProperties = await property.contents.containedProperties() %>
+    <% let inheritedProperties = await property.contents.inheritedProperties() %>
+    <% let inheritedPropertyContainerQNames = await Object.keys(inheritedProperties) %>
+
+    <% if (containedProperties.length > 0 || inheritedPropertyContainerQNames > 0) { %>
+
+      <% let inheritedPropertiesCount = Object.values(inheritedProperties).flat().length; %>
+      <% let subPropertyCount = containedProperties.length + inheritedPropertiesCount %>
+
+      <details open>
+        <summary>
+          <strong>All available sub-properties</strong>
+          <span class="badge badge-info"><%= subPropertyCount %></span>
+        </summary>
+
+        <div class="div-subProperties">
+          <%# Inherited properties %>
+          <% for (let containerQName of inheritedPropertyContainerQNames ) { %>
+            <%- await include("listComponents", {
+              label: `Properties inherited from ${containerQName}`,
+              labelWeightNormal: true,
+              open: "", functions,
+              components: inheritedProperties[containerQName]})  %>
+          <% } %>
+
+          <%# Contained properties %>
+          <%- await include("listComponents", {
+            label: `Properties directly contained by ${property.typeQName}`,
+            labelWeight: true,
+            open: "open", functions,
+            components: containedProperties})  %>
+        </div>
+      </details>
+    <% } %>
+  <% } %>
+
+</details>

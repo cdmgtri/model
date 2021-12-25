@@ -21,6 +21,12 @@
 <body>
   <div class="container">
 
+    <!-- Header box with NIEM logo and header text -->
+    <div class="alert alert-info header">
+      <a href="https://niem.gov"> <img src="/assets/niem.png" class="pb-1" alt="NIEM"/> </a>
+      <h1><%= header %></h1>
+    </div>
+
     <!-- Breadcrumbs -->
     <nav>
       <ol class="breadcrumb">
@@ -38,12 +44,6 @@
         <li class="breadcrumb-item active"><%= breadcrumbActive %></li>
       </ol>
     </nav>
-
-    <!-- Header box with NIEM logo and header text -->
-    <div class="alert alert-info header">
-      <a href="https://niem.gov"> <img src="/assets/niem.png" class="pb-1"/> </a>
-      <h1><%= header %></h1>
-    </div>
 
     <div id="contents">
       <%- contents %>

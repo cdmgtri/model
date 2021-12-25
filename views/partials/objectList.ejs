@@ -1,8 +1,16 @@
 
-<ul class="list-group">
-  <% for (let item of items) { %>
-    <li class="list-group-item">
-      <%- item %>
-    </li>
-  <% } %>
-</ul>
+<details <%= open %>>
+  <summary>
+    <span class="summary-heading"><%= label %></span>
+    <span class="badge badge-info badge-pill"><%= items.length %> </span>
+  </summary>
+  <br/>
+  <ul class="list-group">
+    <% for (let item of items) { %>
+      <li class="list-group-item">
+        <%- item %>
+      </li>
+    <% } %>
+  </ul>
+</details>
+<br/>

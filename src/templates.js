@@ -20,7 +20,22 @@ class Templates {
 
   static async compile(viewPath) {
     let template = fs.readFileSync(`views/${viewPath}`, "utf-8");
-    return ejs.compile(template, {async: true});
+    return ejs.compile(template, {
+      async: true,
+      views: ["views", "views/partials"]
+    });
+  }
+
+  static async render(viewPath, data={}) {
+    let template = await Templates.compile(viewPath);
+
+    // Add helper functions
+    data.functions = {
+      componentLink: Templates.componentLink,
+      namespaceLink: Templates.namespaceLink
+    }
+
+    return template(data);
   }
 
   /**
@@ -31,20 +46,26 @@ class Templates {
     await Templates.build("pages/index.ejs", outputPath, {...data, outputPath});
   }
 
+  static componentLink(component) {
+    return `${component.releaseKey}/${component.prefix}/${component.name}`;
+  }
+
+  static namespaceLink(namespace) {
+    return `${namespace.releaseKey}/${namespace.prefix}`;
+  }
+
   /**
-   * @param {{items: string[]}} data
+   * @param {{label: string, open: string, items: string[]}} data
    */
   static async loadObjectList(data) {
-    let template = await Templates.compile("partials/objectList.ejs");
-    return template(data);
+    return Templates.render("partials/objectList.ejs", data);
   }
 
   /**
    * @param {PropertyDef} property
    */
   static async loadPropertyRow(property) {
-    let template = await Templates.compile("partials/rowProperty.ejs");
-    return template({property});
+    return Templates.render("partials/rowProperty.ejs", {property});
   }
 
   /**
@@ -60,7 +81,7 @@ class Templates {
       contents.push(content);
     }
 
-    return Templates.loadObjectList({ items: contents });
+    return Templates.loadObjectList({ label: "Properties", open: "open", items: contents });
 
   }
 

@@ -3,14 +3,20 @@
   <table class="table table-sm">
     <% items.forEach(item => { %>
       <tr>
-        <td class="stacked-table-label"><%= item.label %></td>
-        <td class="stacked-table-value">
-          <span class="copy" data-toggle="popover" data-placement="right"><%= item.value %></span>
+        <%# Label %>
+        <td class="td-stacked-label"><%= item.label %></td>
+
+        <%# Value with set up for easy copy to clipboard %>
+        <td class="td-stacked-value">
+          <span class="copy"><%= item.value %></span>
+
+          <%# Optional external link to URL %>
           <% if (item.url) { %>
-            <a href="<%- item.value %>" target="_blank"> <i class="fa fa-external-link"></i>
+            <a href="<%- item.value %>" target="_blank"> <i class="fa fa-external-link"></i></a>
           <% } %>
         </td>
       </tr>
     <% }) %>
   </table>
 </div>
+<br/>

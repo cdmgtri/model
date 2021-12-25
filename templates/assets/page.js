@@ -36,9 +36,9 @@ $(function () {
 });
 
 /**
- * Enable popovers
+ * Set up popovers for elements with class "copy"
  */
 $(function () {
   // @ts-ignore
-  $('[data-toggle="popover"]').popover()
+  $(".copy").attr("data-toggle", "popover").attr("title", "Copied!").attr("data-placement", "top").popover();
 })

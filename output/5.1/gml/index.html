@@ -21,6 +21,12 @@
 <body>
   <div class="container">
 
+    <!-- Header box with NIEM logo and header text -->
+    <div class="alert alert-info header">
+      <a href="https://niem.gov"> <img src="/assets/niem.png" class="pb-1"/> </a>
+      <h1>Namespace gml</h1>
+    </div>
+
     <!-- Breadcrumbs -->
     <nav>
       <ol class="breadcrumb">
@@ -39,53 +45,72 @@
       </ol>
     </nav>
 
-    <!-- Header box with NIEM logo and header text -->
-    <div class="alert alert-info header">
-      <a href="https://niem.gov"> <img src="/assets/niem.png" class="pb-1"/> </a>
-      <h1>Namespace gml</h1>
-    </div>
-
     <div id="contents">
       
 <div class="card">
   <table class="table table-sm">
     
       <tr>
-        <td class="stacked-table-label">Definition</td>
-        <td class="stacked-table-value">
-          <span class="copy" data-toggle="popover" data-placement="right">Geography Markup Language (GML) version 3.2.1 schemas.  See http://www.opengeospatial.org OGC document 07-036 for documentation: &#34;The Geography Markup Language (GML) was originally developed within the Open Geospatial Consortium, Inc. (OGC). ISO 19136 was prepared by ISO/TC 211 jointly with the OGC.&#34;  See http://schemas.opengis.net/gml/ for schemas.</span>
+        
+        <td class="td-stacked-label">Definition</td>
+
+        
+        <td class="td-stacked-value">
+          <span class="copy">Geography Markup Language (GML) version 3.2.1 schemas.  See http://www.opengeospatial.org OGC document 07-036 for documentation: &#34;The Geography Markup Language (GML) was originally developed within the Open Geospatial Consortium, Inc. (OGC). ISO 19136 was prepared by ISO/TC 211 jointly with the OGC.&#34;  See http://schemas.opengis.net/gml/ for schemas.</span>
+
+          
           
         </td>
       </tr>
     
       <tr>
-        <td class="stacked-table-label">Prefix</td>
-        <td class="stacked-table-value">
-          <span class="copy" data-toggle="popover" data-placement="right">gml</span>
+        
+        <td class="td-stacked-label">Prefix</td>
+
+        
+        <td class="td-stacked-value">
+          <span class="copy">gml</span>
+
+          
           
         </td>
       </tr>
     
       <tr>
-        <td class="stacked-table-label">File name</td>
-        <td class="stacked-table-value">
-          <span class="copy" data-toggle="popover" data-placement="right">gml.xsd</span>
+        
+        <td class="td-stacked-label">File name</td>
+
+        
+        <td class="td-stacked-value">
+          <span class="copy">gml.xsd</span>
+
+          
           
         </td>
       </tr>
     
       <tr>
-        <td class="stacked-table-label">Style</td>
-        <td class="stacked-table-value">
-          <span class="copy" data-toggle="popover" data-placement="right">external</span>
+        
+        <td class="td-stacked-label">Style</td>
+
+        
+        <td class="td-stacked-value">
+          <span class="copy">external</span>
+
+          
           
         </td>
       </tr>
     
       <tr>
-        <td class="stacked-table-label">URI</td>
-        <td class="stacked-table-value">
-          <span class="copy" data-toggle="popover" data-placement="right">http://www.opengis.net/gml/3.2</span>
+        
+        <td class="td-stacked-label">URI</td>
+
+        
+        <td class="td-stacked-value">
+          <span class="copy">http://www.opengis.net/gml/3.2</span>
+
+          
           
             <a href="http://www.opengis.net/gml/3.2" target="_blank"> <i class="fa fa-external-link"></i>
           
@@ -94,14 +119,428 @@
     
   </table>
 </div>
+<br/>
 
-      <details>
-        <summary>
-          <strong>Properties</strong>
-          <span class="badge badge-info badge-pill">#</span>
-        </summary>
-      </details>
+<details open >
+  <summary>
+    <strong>Properties</strong>
+    <span class="badge badge-info">12 </span>
+  </summary>
+  <br/>
+  <ul class="list-group">
     
+      <li class="list-group-item">
+        
+
+
+<details>
+
+  
+  <summary>
+    <strong><a href="5.1/gml/AbstractFeature">gml:AbstractFeature</a></strong>
+
+      
+        
+        <span> (type  )</span>
+      
+
+    </small>
+  </summary>
+  <br/>
+
+  
+  <p class="copy">This abstract element serves as the head of a substitution group which may contain any elements whose content model is derived from gml:AbstractFeatureType.  This may be used as a variable in the construction of content models.   gml:AbstractFeature may be thought of as &#34;anything that is a GML feature&#34; and may be used to define variables or templates in which the value of a GML property is &#34;any feature&#34;. This occurs in particular in a GML feature collection where the feature member properties contain one or multiple copies of gml:AbstractFeature respectively.</p>
+
+  
+  
+
+  
+  
+
+
+
+</details>
+
+      </li>
+    
+      <li class="list-group-item">
+        
+
+
+<details>
+
+  
+  <summary>
+    <strong><a href="5.1/gml/AbstractGeometry">gml:AbstractGeometry</a></strong>
+
+      
+        
+        <span> (type  )</span>
+      
+
+    </small>
+  </summary>
+  <br/>
+
+  
+  <p class="copy">The AbstractGeometry element is the abstract head of the substitution group for all geometry elements of GML. This includes pre-defined and user-defined geometry elements. Any geometry element shall be a direct or indirect extension/restriction of AbstractGeometryType and shall be directly or indirectly in the substitution group of AbstractGeometry.</p>
+
+  
+  
+
+  
+  
+
+
+
+</details>
+
+      </li>
+    
+      <li class="list-group-item">
+        
+
+
+<details>
+
+  
+  <summary>
+    <strong><a href="5.1/gml/Curve">gml:Curve</a></strong>
+
+      
+        
+        <span> (type  )</span>
+      
+
+    </small>
+  </summary>
+  <br/>
+
+  
+  <p class="copy">A curve is a 1-dimensional primitive. Curves are continuous, connected, and have a measurable length in terms of the coordinate system.  A curve is composed of one or more curve segments. Each curve segment within a curve may be defined using a different interpolation method. The curve segments are connected to one another, with the end point of each segment except the last being the start point of the next segment in the segment list.  The orientation of the curve is positive.</p>
+
+  
+  
+
+  
+  
+
+
+
+</details>
+
+      </li>
+    
+      <li class="list-group-item">
+        
+
+
+<details>
+
+  
+  <summary>
+    <strong><a href="5.1/gml/Envelope">gml:Envelope</a></strong>
+
+      
+        
+        <span> (type  )</span>
+      
+
+    </small>
+  </summary>
+  <br/>
+
+  
+  <p class="copy">An envelope which defines an extent using a pair of positions defining opposite corners in arbitrary dimensions. The first direct position is the &#34;lower corner&#34; (a coordinate position consisting of all the minimal ordinates for each dimension for all points within</p>
+
+  
+  
+
+  
+  
+
+
+
+</details>
+
+      </li>
+    
+      <li class="list-group-item">
+        
+
+
+<details>
+
+  
+  <summary>
+    <strong><a href="5.1/gml/LineString">gml:LineString</a></strong>
+
+      
+        
+        <span> (type  )</span>
+      
+
+    </small>
+  </summary>
+  <br/>
+
+  
+  <p class="copy">A gml:LineString is a special curve that consists of a single segment with linear interpolation. It is defined by two or more coordinate tuples, with linear interpolation between them.</p>
+
+  
+  
+
+  
+  
+
+
+
+</details>
+
+      </li>
+    
+      <li class="list-group-item">
+        
+
+
+<details>
+
+  
+  <summary>
+    <strong><a href="5.1/gml/MultiCurve">gml:MultiCurve</a></strong>
+
+      
+        
+        <span> (type  )</span>
+      
+
+    </small>
+  </summary>
+  <br/>
+
+  
+  <p class="copy">A gml:MultiCurve is defined by one or more gml:AbstractCurves. The members of the geometric aggregate may be specified either using the &#34;standard&#34; property (gml:curveMember) or the array property (gml:curveMembers). It is also valid to use both the &#34;standard&#34; and the array properties in the same collection.</p>
+
+  
+  
+
+  
+  
+
+
+
+</details>
+
+      </li>
+    
+      <li class="list-group-item">
+        
+
+
+<details>
+
+  
+  <summary>
+    <strong><a href="5.1/gml/MultiGeometry">gml:MultiGeometry</a></strong>
+
+      
+        
+        <span> (type  )</span>
+      
+
+    </small>
+  </summary>
+  <br/>
+
+  
+  <p class="copy">A collection of one or more GML geometry objects of arbitrary type. The members of the geometric aggregate may be specified either using the &#34;standard&#34; property (gml:geometryMember) or the array property (gml:geometryMembers). It is a</p>
+
+  
+  
+
+  
+  
+
+
+
+</details>
+
+      </li>
+    
+      <li class="list-group-item">
+        
+
+
+<details>
+
+  
+  <summary>
+    <strong><a href="5.1/gml/MultiPoint">gml:MultiPoint</a></strong>
+
+      
+        
+        <span> (type  )</span>
+      
+
+    </small>
+  </summary>
+  <br/>
+
+  
+  <p class="copy">A gml:MultiPoint consists of one or more gml:Points. The members of the geometric aggregate may be specified either using the &#34;standard&#34; property (gml:pointMember) or the array property (gml:pointMembers). It is also valid to use both the &#34;standard&#34; and the array properties in the same collection.</p>
+
+  
+  
+
+  
+  
+
+
+
+</details>
+
+      </li>
+    
+      <li class="list-group-item">
+        
+
+
+<details>
+
+  
+  <summary>
+    <strong><a href="5.1/gml/MultiSurface">gml:MultiSurface</a></strong>
+
+      
+        
+        <span> (type  )</span>
+      
+
+    </small>
+  </summary>
+  <br/>
+
+  
+  <p class="copy">A geometry collection that includes one or more Polygons or Surfaces.</p>
+
+  
+  
+
+  
+  
+
+
+
+</details>
+
+      </li>
+    
+      <li class="list-group-item">
+        
+
+
+<details>
+
+  
+  <summary>
+    <strong><a href="5.1/gml/Point">gml:Point</a></strong>
+
+      
+        
+        <span> (type  )</span>
+      
+
+    </small>
+  </summary>
+  <br/>
+
+  
+  <p class="copy">A gml:Point is defined by a single coordinate tuple. The direct position of a point is specified by the gml:pos element which is of type gml:DirectPositionType.</p>
+
+  
+  
+
+  
+  
+
+
+
+</details>
+
+      </li>
+    
+      <li class="list-group-item">
+        
+
+
+<details>
+
+  
+  <summary>
+    <strong><a href="5.1/gml/Polygon">gml:Polygon</a></strong>
+
+      
+        
+        <span> (type  )</span>
+      
+
+    </small>
+  </summary>
+  <br/>
+
+  
+  <p class="copy">A gml:Polygon is a special surface that is defined by a single surface patch (see D.3.6). The boundary of this patch is coplanar and the polygon uses planar interpolation in its interior.</p>
+
+  
+  
+
+  
+  
+
+
+
+</details>
+
+      </li>
+    
+      <li class="list-group-item">
+        
+
+
+<details>
+
+  
+  <summary>
+    <strong><a href="5.1/gml/Surface">gml:Surface</a></strong>
+
+      
+        
+        <span> (type  )</span>
+      
+
+    </small>
+  </summary>
+  <br/>
+
+  
+  <p class="copy">A Surface is a 2-dimensional primitive and is composed of one or more surface patches.  The surface patches are connected to one another.</p>
+
+  
+  
+
+  
+  
+
+
+
+</details>
+
+      </li>
+    
+  </ul>
+</details>
+<br/>
+
     </div>
 
     <!-- Footer -->

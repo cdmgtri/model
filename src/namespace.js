@@ -1,5 +1,5 @@
 
-let { NIEM, ReleaseDef, NamespaceDef, Namespace, LocalTermDef, PropertyDef, TypeDef } = require("niem-model");
+let { NIEM, ReleaseDef, NamespaceDef, Namespace, LocalTermDef, LocalTerm, Component, PropertyDef, TypeDef } = require("niem-model");
 
 let Templates = require("./templates");
 let Utils = require("./utils");
@@ -32,9 +32,9 @@ class NamespaceHTML {
   }
 
   async init() {
-    this.properties = await this.namespace.properties.find();
-    this.types = await this.namespace.types.find();
-    this.localTerms = await this.namespace.localTerms.find();
+    this.properties = (await this.namespace.properties.find()).sort(Component.sortByName);
+    this.types = (await this.namespace.types.find()).sort(Component.sortByName);
+    this.localTerms = (await this.namespace.localTerms.find()).sort(LocalTerm.sortByTerm);
   }
 
   async write() {
@@ -49,7 +49,7 @@ class NamespaceHTML {
       { label: "URI", value: this.namespace.uri, url: this.namespace.uri}
     ]});
 
-    contents += this.getProperties();
+    contents += await Templates.loadPropertyList(this.properties);
 
     await Templates.buildPage(`${this.releaseKey}/${this.namespace.prefix}/index.html`, {
       title: this.namespace.prefix,
@@ -68,49 +68,6 @@ class NamespaceHTML {
       await namespaceHTML.init();
       await namespaceHTML.write();
     }
-  }
-
-  getProperties() {
-
-    return `
-      <details>
-        <summary>
-          <strong>Properties</strong>
-          <span class="badge badge-info badge-pill">${"#"}</span>
-        </summary>
-      </details>
-    `;
-
-  }
-
-  /**
-   * @param {PropertyDef} property
-   */
-  getPropertyRow(property) {
-
-    let typeInfo = "";
-    if (property.isAbstract) {
-      typeInfo = "(abstract)";
-    }
-
-    return `
-      <strong><a href="${Utils.niemObjectLink(property)}">${ property.qname }</a></strong>
-
-      <small>
-        <!-- (type qname) -->
-        <span v-if="property.typeQName">
-          (type <b-link :to="typeRoute">{{ property.typeQName }}</b-link>)
-        </span>
-
-        <!-- (abstract) [substitution count badge] -->
-        <span v-else>
-          <span> (abstract)</span>
-          <b-badge v-if="substitutions.length > 0" variant="secondary" pill>
-            {{ substitutions.length }} substitution<span v-if="substitutions.length>1">s</span>
-          </b-badge>
-        </span>
-      </small>
-    `
   }
 
 }

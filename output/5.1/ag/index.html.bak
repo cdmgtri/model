@@ -23,7 +23,7 @@
 
     <!-- Header box with NIEM logo and header text -->
     <div class="alert alert-info header">
-      <a href="https://niem.gov"> <img src="/assets/niem.png" class="pb-1" alt="NIEM"/> </a>
+      <a href="https://niem.gov"> <img src="/assets/niem.png" class="pb-1"/> </a>
       <h1>Namespace ag</h1>
     </div>
 
@@ -121,14 +121,13 @@
 </div>
 <br/>
 
-<details open>
+<details open >
   <summary>
     <span class="summary-heading">Properties</span>
-    <span class="badge badge-info badge-pill">64 </span>
+    <span class="badge badge-info">64 </span>
   </summary>
   <br/>
   <ul class="list-group">
-    
       <li class="list-group-item">
         
 
@@ -138,7 +137,7 @@
   
   <summary>
     <strong><a href="5.1/ag/AcreageCalculationProjectionCode">ag:AcreageCalculationProjectionCode</a></strong>
-    <small>
+
       
         
         <span> (type ag_codes:CoordinateReferenceSystemCodeType )</span>
@@ -160,14 +159,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -182,7 +180,7 @@
   
   <summary>
     <strong><a href="5.1/ag/AcreageSubmissionFile">ag:AcreageSubmissionFile</a></strong>
-    <small>
+
       
         
         <span> (type ag:AcreageSubmissionFileType )</span>
@@ -204,29 +202,27 @@
 
 
   
+  
+  
+  
+
+  
 
     
     
-    
-    
 
-    
+    <details open>
+      <summary>
+        <strong>All available sub-properties</strong>
+        <span class="badge badge-info">5</span>
+      </summary>
 
-      
-      
+      <div class="div-subProperties">
+        
+        
 
-      <details open>
-        <summary>
-          <strong>All available sub-properties</strong>
-          <span class="badge badge-info">5</span>
-        </summary>
-
-        <div class="div-subProperties">
-          
-          
-
-          
-          
+        
+        
 
   
   
@@ -248,10 +244,10 @@
   
 
   
-<details open>
+<details open >
   <summary>
     <span class="summary-heading">Properties directly contained by ag:AcreageSubmissionFileType</span>
-    <span class="badge badge-info badge-pill">5 </span>
+    <span class="badge badge-info">5 </span>
   </summary>
   <br/>
   <ul class="list-group">
@@ -297,10 +293,9 @@
 
 
 
-        </div>
-      </details>
-    
-  
+        
+      </div>
+    </details>
 
 </details>
 
@@ -315,7 +310,7 @@
   
   <summary>
     <strong><a href="5.1/ag/AcreageSubmissionFileAugmentationPoint">ag:AcreageSubmissionFileAugmentationPoint</a></strong>
-    <small>
+
       
         
         <span> (abstract) </span>
@@ -339,14 +334,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -361,7 +355,7 @@
   
   <summary>
     <strong><a href="5.1/ag/AdministrativeCountyFSACode">ag:AdministrativeCountyFSACode</a></strong>
-    <small>
+
       
         
         <span> (type usda_fsa:AdministrativeCountyFSACodeType )</span>
@@ -383,14 +377,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -405,7 +398,7 @@
   
   <summary>
     <strong><a href="5.1/ag/AdministrativeStateFSACode">ag:AdministrativeStateFSACode</a></strong>
-    <small>
+
       
         
         <span> (type usda_fsa:AdministrativeStateFSACodeType )</span>
@@ -427,14 +420,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -449,7 +441,7 @@
   
   <summary>
     <strong><a href="5.1/ag/AgricultureProductionPlan">ag:AgricultureProductionPlan</a></strong>
-    <small>
+
       
         
         <span> (type ag:AgricultureProductionPlanType )</span>
@@ -471,29 +463,27 @@
 
 
   
+  
+  
+  
+
+  
 
     
     
-    
-    
 
-    
+    <details open>
+      <summary>
+        <strong>All available sub-properties</strong>
+        <span class="badge badge-info">24</span>
+      </summary>
 
-      
-      
+      <div class="div-subProperties">
+        
+        
 
-      <details open>
-        <summary>
-          <strong>All available sub-properties</strong>
-          <span class="badge badge-info">24</span>
-        </summary>
-
-        <div class="div-subProperties">
-          
-          
-
-          
-          
+        
+        
 
   
   
@@ -572,10 +562,10 @@
   
 
   
-<details open>
+<details open >
   <summary>
     <span class="summary-heading">Properties directly contained by ag:AgricultureProductionPlanType</span>
-    <span class="badge badge-info badge-pill">24 </span>
+    <span class="badge badge-info">24 </span>
   </summary>
   <br/>
   <ul class="list-group">
@@ -754,10 +744,9 @@
 
 
 
-        </div>
-      </details>
-    
-  
+        
+      </div>
+    </details>
 
 </details>
 
@@ -772,7 +761,7 @@
   
   <summary>
     <strong><a href="5.1/ag/AgricultureProductionPlanAugmentationPoint">ag:AgricultureProductionPlanAugmentationPoint</a></strong>
-    <small>
+
       
         
         <span> (abstract) </span>
@@ -796,14 +785,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -818,7 +806,7 @@
   
   <summary>
     <strong><a href="5.1/ag/CLUID">ag:CLUID</a></strong>
-    <small>
+
       
         
         <span> (type ag_codes:CLUIDType )</span>
@@ -840,14 +828,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -862,7 +849,7 @@
   
   <summary>
     <strong><a href="5.1/ag/CLUProducerReviewRequestIndicator">ag:CLUProducerReviewRequestIndicator</a></strong>
-    <small>
+
       
         
         <span> (type niem-xs:boolean )</span>
@@ -884,14 +871,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -906,7 +892,7 @@
   
   <summary>
     <strong><a href="5.1/ag/CoreProductCategoryCode">ag:CoreProductCategoryCode</a></strong>
-    <small>
+
       
         
         <span> (type ag_codes:CoreProductCategoryType )</span>
@@ -928,14 +914,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -950,7 +935,7 @@
   
   <summary>
     <strong><a href="5.1/ag/CoreProductCode">ag:CoreProductCode</a></strong>
-    <small>
+
       
         
         <span> (type ag_codes:CoreProductType )</span>
@@ -972,14 +957,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -994,7 +978,7 @@
   
   <summary>
     <strong><a href="5.1/ag/CroppingPracticeCode">ag:CroppingPracticeCode</a></strong>
-    <small>
+
       
         
         <span> (type ag_codes:CroppingPracticeCodeType )</span>
@@ -1016,14 +1000,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -1038,7 +1021,7 @@
   
   <summary>
     <strong><a href="5.1/ag/CropYearValue">ag:CropYearValue</a></strong>
-    <small>
+
       
         
         <span> (type ag_codes:CropYearType )</span>
@@ -1060,14 +1043,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -1082,7 +1064,7 @@
   
   <summary>
     <strong><a href="5.1/ag/CustomerInfo">ag:CustomerInfo</a></strong>
-    <small>
+
       
         
         <span> (type ag:CustomerInfoType )</span>
@@ -1104,29 +1086,27 @@
 
 
   
+  
+  
+  
+
+  
 
     
     
-    
-    
 
-    
+    <details open>
+      <summary>
+        <strong>All available sub-properties</strong>
+        <span class="badge badge-info">10</span>
+      </summary>
 
-      
-      
+      <div class="div-subProperties">
+        
+        
 
-      <details open>
-        <summary>
-          <strong>All available sub-properties</strong>
-          <span class="badge badge-info">10</span>
-        </summary>
-
-        <div class="div-subProperties">
-          
-          
-
-          
-          
+        
+        
 
   
   
@@ -1163,10 +1143,10 @@
   
 
   
-<details open>
+<details open >
   <summary>
     <span class="summary-heading">Properties directly contained by ag:CustomerInfoType</span>
-    <span class="badge badge-info badge-pill">10 </span>
+    <span class="badge badge-info">10 </span>
   </summary>
   <br/>
   <ul class="list-group">
@@ -1247,10 +1227,9 @@
 
 
 
-        </div>
-      </details>
-    
-  
+        
+      </div>
+    </details>
 
 </details>
 
@@ -1265,7 +1244,7 @@
   
   <summary>
     <strong><a href="5.1/ag/CustomerInfoAugmentationPoint">ag:CustomerInfoAugmentationPoint</a></strong>
-    <small>
+
       
         
         <span> (abstract) </span>
@@ -1289,14 +1268,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -1311,7 +1289,7 @@
   
   <summary>
     <strong><a href="5.1/ag/CustomerInterAgencyIdentificationID">ag:CustomerInterAgencyIdentificationID</a></strong>
-    <small>
+
       
         
         <span> (type niem-xs:string )</span>
@@ -1333,14 +1311,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -1355,7 +1332,7 @@
   
   <summary>
     <strong><a href="5.1/ag/FarmCropAcreage">ag:FarmCropAcreage</a></strong>
-    <small>
+
       
         
         <span> (type ag:FarmCropAcreageType )</span>
@@ -1377,29 +1354,27 @@
 
 
   
+  
+  
+  
+
+  
 
     
     
-    
-    
 
-    
+    <details open>
+      <summary>
+        <strong>All available sub-properties</strong>
+        <span class="badge badge-info">5</span>
+      </summary>
 
-      
-      
+      <div class="div-subProperties">
+        
+        
 
-      <details open>
-        <summary>
-          <strong>All available sub-properties</strong>
-          <span class="badge badge-info">5</span>
-        </summary>
-
-        <div class="div-subProperties">
-          
-          
-
-          
-          
+        
+        
 
   
   
@@ -1421,10 +1396,10 @@
   
 
   
-<details open>
+<details open >
   <summary>
     <span class="summary-heading">Properties directly contained by ag:FarmCropAcreageType</span>
-    <span class="badge badge-info badge-pill">5 </span>
+    <span class="badge badge-info">5 </span>
   </summary>
   <br/>
   <ul class="list-group">
@@ -1470,10 +1445,9 @@
 
 
 
-        </div>
-      </details>
-    
-  
+        
+      </div>
+    </details>
 
 </details>
 
@@ -1488,7 +1462,7 @@
   
   <summary>
     <strong><a href="5.1/ag/FarmCropAcreageAugmentationPoint">ag:FarmCropAcreageAugmentationPoint</a></strong>
-    <small>
+
       
         
         <span> (abstract) </span>
@@ -1512,14 +1486,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -1534,7 +1507,7 @@
   
   <summary>
     <strong><a href="5.1/ag/FarmNumberID">ag:FarmNumberID</a></strong>
-    <small>
+
       
         
         <span> (type ag_codes:FarmNumberIDType )</span>
@@ -1556,14 +1529,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -1578,7 +1550,7 @@
   
   <summary>
     <strong><a href="5.1/ag/FieldCropAcreage">ag:FieldCropAcreage</a></strong>
-    <small>
+
       
         
         <span> (type ag:FieldCropAcreageType )</span>
@@ -1600,29 +1572,27 @@
 
 
   
+  
+  
+  
+
+  
 
     
     
-    
-    
 
-    
+    <details open>
+      <summary>
+        <strong>All available sub-properties</strong>
+        <span class="badge badge-info">5</span>
+      </summary>
 
-      
-      
+      <div class="div-subProperties">
+        
+        
 
-      <details open>
-        <summary>
-          <strong>All available sub-properties</strong>
-          <span class="badge badge-info">5</span>
-        </summary>
-
-        <div class="div-subProperties">
-          
-          
-
-          
-          
+        
+        
 
   
   
@@ -1644,10 +1614,10 @@
   
 
   
-<details open>
+<details open >
   <summary>
     <span class="summary-heading">Properties directly contained by ag:FieldCropAcreageType</span>
-    <span class="badge badge-info badge-pill">5 </span>
+    <span class="badge badge-info">5 </span>
   </summary>
   <br/>
   <ul class="list-group">
@@ -1693,10 +1663,9 @@
 
 
 
-        </div>
-      </details>
-    
-  
+        
+      </div>
+    </details>
 
 </details>
 
@@ -1711,7 +1680,7 @@
   
   <summary>
     <strong><a href="5.1/ag/FieldCropAcreageAugmentationPoint">ag:FieldCropAcreageAugmentationPoint</a></strong>
-    <small>
+
       
         
         <span> (abstract) </span>
@@ -1735,14 +1704,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -1757,7 +1725,7 @@
   
   <summary>
     <strong><a href="5.1/ag/FieldNumberID">ag:FieldNumberID</a></strong>
-    <small>
+
       
         
         <span> (type ag_codes:FieldNumberIDType )</span>
@@ -1779,14 +1747,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -1801,7 +1768,7 @@
   
   <summary>
     <strong><a href="5.1/ag/FileCustomerID">ag:FileCustomerID</a></strong>
-    <small>
+
       
         
         <span> (type ag_codes:FileCustomerIDType )</span>
@@ -1823,14 +1790,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -1845,7 +1811,7 @@
   
   <summary>
     <strong><a href="5.1/ag/FinalPlantedDate">ag:FinalPlantedDate</a></strong>
-    <small>
+
       
         
         <span> (type niem-xs:date )</span>
@@ -1867,14 +1833,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -1889,7 +1854,7 @@
   
   <summary>
     <strong><a href="5.1/ag/FinalReportedAcreageValue">ag:FinalReportedAcreageValue</a></strong>
-    <small>
+
       
         
         <span> (type ag_codes:FinalReportedAcreageType )</span>
@@ -1911,14 +1876,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -1933,7 +1897,7 @@
   
   <summary>
     <strong><a href="5.1/ag/GeospatialDataSubmissionMethodCode">ag:GeospatialDataSubmissionMethodCode</a></strong>
-    <small>
+
       
         
         <span> (type ag_codes:GeospatialDataSubmissionMethodCodeType )</span>
@@ -1955,14 +1919,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -1977,7 +1940,7 @@
   
   <summary>
     <strong><a href="5.1/ag/GeospatialShapeModifiedIndicator">ag:GeospatialShapeModifiedIndicator</a></strong>
-    <small>
+
       
         
         <span> (type niem-xs:boolean )</span>
@@ -1999,14 +1962,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -2021,7 +1983,7 @@
   
   <summary>
     <strong><a href="5.1/ag/GeospatialShapeModifiedOtherReasonText">ag:GeospatialShapeModifiedOtherReasonText</a></strong>
-    <small>
+
       
         
         <span> (type ag_codes:GeospatialShapeModifiedOtherReasonTextType )</span>
@@ -2043,14 +2005,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -2065,7 +2026,7 @@
   
   <summary>
     <strong><a href="5.1/ag/GeospatialShapeModifiedReasonCode">ag:GeospatialShapeModifiedReasonCode</a></strong>
-    <small>
+
       
         
         <span> (type ag_codes:GeospatialShapeModifiedReasonCodeType )</span>
@@ -2087,14 +2048,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -2109,7 +2069,7 @@
   
   <summary>
     <strong><a href="5.1/ag/GeospatialShapeProcessDate">ag:GeospatialShapeProcessDate</a></strong>
-    <small>
+
       
         
         <span> (type niem-xs:date )</span>
@@ -2131,14 +2091,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -2153,7 +2112,7 @@
   
   <summary>
     <strong><a href="5.1/ag/GeospatialShapeSourceCode">ag:GeospatialShapeSourceCode</a></strong>
-    <small>
+
       
         
         <span> (type ag_codes:GeospatialShapeSourceCodeType )</span>
@@ -2175,14 +2134,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -2197,7 +2155,7 @@
   
   <summary>
     <strong><a href="5.1/ag/GeospatialSourceDataCreationDateTime">ag:GeospatialSourceDataCreationDateTime</a></strong>
-    <small>
+
       
         
         <span> (type niem-xs:dateTime )</span>
@@ -2219,14 +2177,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -2241,7 +2198,7 @@
   
   <summary>
     <strong><a href="5.1/ag/GeospatialSourceInfo">ag:GeospatialSourceInfo</a></strong>
-    <small>
+
       
         
         <span> (type ag:GeospatialSourceInfoType )</span>
@@ -2263,29 +2220,27 @@
 
 
   
+  
+  
+  
+
+  
 
     
     
-    
-    
 
-    
+    <details open>
+      <summary>
+        <strong>All available sub-properties</strong>
+        <span class="badge badge-info">12</span>
+      </summary>
 
-      
-      
+      <div class="div-subProperties">
+        
+        
 
-      <details open>
-        <summary>
-          <strong>All available sub-properties</strong>
-          <span class="badge badge-info">12</span>
-        </summary>
-
-        <div class="div-subProperties">
-          
-          
-
-          
-          
+        
+        
 
   
   
@@ -2328,10 +2283,10 @@
   
 
   
-<details open>
+<details open >
   <summary>
     <span class="summary-heading">Properties directly contained by ag:GeospatialSourceInfoType</span>
-    <span class="badge badge-info badge-pill">12 </span>
+    <span class="badge badge-info">12 </span>
   </summary>
   <br/>
   <ul class="list-group">
@@ -2426,10 +2381,9 @@
 
 
 
-        </div>
-      </details>
-    
-  
+        
+      </div>
+    </details>
 
 </details>
 
@@ -2444,7 +2398,7 @@
   
   <summary>
     <strong><a href="5.1/ag/GeospatialSourceInfoAugmentationPoint">ag:GeospatialSourceInfoAugmentationPoint</a></strong>
-    <small>
+
       
         
         <span> (abstract) </span>
@@ -2468,14 +2422,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -2490,7 +2443,7 @@
   
   <summary>
     <strong><a href="5.1/ag/IrrigationPracticeCode">ag:IrrigationPracticeCode</a></strong>
-    <small>
+
       
         
         <span> (type ag_codes:IrrigationPracticeCodeType )</span>
@@ -2512,14 +2465,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -2534,13 +2486,13 @@
   
   <summary>
     <strong><a href="5.1/ag/LocationCoordinatesAbstract">ag:LocationCoordinatesAbstract</a></strong>
-    <small>
+
       
         
         <span> (abstract) </span>
         
           
-          <span class="badge badge-secondary badge-pill">
+          <span class="badge badge-secondary" pill>
             4 substitutions
           </span>
         
@@ -2577,10 +2529,10 @@
   
 
   
-<details >
+<details  >
   <summary>
     <span class="summary-heading">Substitutions</span>
-    <span class="badge badge-info badge-pill">4 </span>
+    <span class="badge badge-info">4 </span>
   </summary>
   <br/>
   <ul class="list-group">
@@ -2621,14 +2573,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -2643,7 +2594,7 @@
   
   <summary>
     <strong><a href="5.1/ag/LocationLineStringCoordinates">ag:LocationLineStringCoordinates</a></strong>
-    <small>
+
       
         
         <span> (type geo:LineStringType )</span>
@@ -2669,29 +2620,27 @@
 
 
   
+  
+  
+  
+
+  
 
     
     
-    
-    
 
-    
+    <details open>
+      <summary>
+        <strong>All available sub-properties</strong>
+        <span class="badge badge-info">1</span>
+      </summary>
 
-      
-      
+      <div class="div-subProperties">
+        
+        
 
-      <details open>
-        <summary>
-          <strong>All available sub-properties</strong>
-          <span class="badge badge-info">1</span>
-        </summary>
-
-        <div class="div-subProperties">
-          
-          
-
-          
-          
+        
+        
 
   
   
@@ -2701,10 +2650,10 @@
   
 
   
-<details open>
+<details open >
   <summary>
     <span class="summary-heading">Properties directly contained by geo:LineStringType</span>
-    <span class="badge badge-info badge-pill">1 </span>
+    <span class="badge badge-info">1 </span>
   </summary>
   <br/>
   <ul class="list-group">
@@ -2722,10 +2671,9 @@
 
 
 
-        </div>
-      </details>
-    
-  
+        
+      </div>
+    </details>
 
 </details>
 
@@ -2740,7 +2688,7 @@
   
   <summary>
     <strong><a href="5.1/ag/LocationMultiSurfaceCoordinates">ag:LocationMultiSurfaceCoordinates</a></strong>
-    <small>
+
       
         
         <span> (type geo:MultiSurfaceType )</span>
@@ -2766,29 +2714,27 @@
 
 
   
+  
+  
+  
+
+  
 
     
     
-    
-    
 
-    
+    <details open>
+      <summary>
+        <strong>All available sub-properties</strong>
+        <span class="badge badge-info">1</span>
+      </summary>
 
-      
-      
+      <div class="div-subProperties">
+        
+        
 
-      <details open>
-        <summary>
-          <strong>All available sub-properties</strong>
-          <span class="badge badge-info">1</span>
-        </summary>
-
-        <div class="div-subProperties">
-          
-          
-
-          
-          
+        
+        
 
   
   
@@ -2798,10 +2744,10 @@
   
 
   
-<details open>
+<details open >
   <summary>
     <span class="summary-heading">Properties directly contained by geo:MultiSurfaceType</span>
-    <span class="badge badge-info badge-pill">1 </span>
+    <span class="badge badge-info">1 </span>
   </summary>
   <br/>
   <ul class="list-group">
@@ -2819,10 +2765,9 @@
 
 
 
-        </div>
-      </details>
-    
-  
+        
+      </div>
+    </details>
 
 </details>
 
@@ -2837,7 +2782,7 @@
   
   <summary>
     <strong><a href="5.1/ag/LocationPointCoordinates">ag:LocationPointCoordinates</a></strong>
-    <small>
+
       
         
         <span> (type geo:PointType )</span>
@@ -2863,29 +2808,27 @@
 
 
   
+  
+  
+  
+
+  
 
     
     
-    
-    
 
-    
+    <details open>
+      <summary>
+        <strong>All available sub-properties</strong>
+        <span class="badge badge-info">1</span>
+      </summary>
 
-      
-      
+      <div class="div-subProperties">
+        
+        
 
-      <details open>
-        <summary>
-          <strong>All available sub-properties</strong>
-          <span class="badge badge-info">1</span>
-        </summary>
-
-        <div class="div-subProperties">
-          
-          
-
-          
-          
+        
+        
 
   
   
@@ -2895,10 +2838,10 @@
   
 
   
-<details open>
+<details open >
   <summary>
     <span class="summary-heading">Properties directly contained by geo:PointType</span>
-    <span class="badge badge-info badge-pill">1 </span>
+    <span class="badge badge-info">1 </span>
   </summary>
   <br/>
   <ul class="list-group">
@@ -2916,10 +2859,9 @@
 
 
 
-        </div>
-      </details>
-    
-  
+        
+      </div>
+    </details>
 
 </details>
 
@@ -2934,7 +2876,7 @@
   
   <summary>
     <strong><a href="5.1/ag/LocationPolygonCoordinates">ag:LocationPolygonCoordinates</a></strong>
-    <small>
+
       
         
         <span> (type geo:PolygonType )</span>
@@ -2960,29 +2902,27 @@
 
 
   
+  
+  
+  
+
+  
 
     
     
-    
-    
 
-    
+    <details open>
+      <summary>
+        <strong>All available sub-properties</strong>
+        <span class="badge badge-info">1</span>
+      </summary>
 
-      
-      
+      <div class="div-subProperties">
+        
+        
 
-      <details open>
-        <summary>
-          <strong>All available sub-properties</strong>
-          <span class="badge badge-info">1</span>
-        </summary>
-
-        <div class="div-subProperties">
-          
-          
-
-          
-          
+        
+        
 
   
   
@@ -2992,10 +2932,10 @@
   
 
   
-<details open>
+<details open >
   <summary>
     <span class="summary-heading">Properties directly contained by geo:PolygonType</span>
-    <span class="badge badge-info badge-pill">1 </span>
+    <span class="badge badge-info">1 </span>
   </summary>
   <br/>
   <ul class="list-group">
@@ -3013,10 +2953,9 @@
 
 
 
-        </div>
-      </details>
-    
-  
+        
+      </div>
+    </details>
 
 </details>
 
@@ -3031,7 +2970,7 @@
   
   <summary>
     <strong><a href="5.1/ag/MICSCode">ag:MICSCode</a></strong>
-    <small>
+
       
         
         <span> (type ag_codes:MICSCodeType )</span>
@@ -3053,14 +2992,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -3075,7 +3013,7 @@
   
   <summary>
     <strong><a href="5.1/ag/MICSName">ag:MICSName</a></strong>
-    <small>
+
       
         
         <span> (type ag_codes:MICSNameType )</span>
@@ -3097,14 +3035,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -3119,7 +3056,7 @@
   
   <summary>
     <strong><a href="5.1/ag/OrganicPracticeCategoryCode">ag:OrganicPracticeCategoryCode</a></strong>
-    <small>
+
       
         
         <span> (type ag_codes:OrganicPracticeCategoryCodeType )</span>
@@ -3141,14 +3078,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -3163,7 +3099,7 @@
   
   <summary>
     <strong><a href="5.1/ag/OriginalPlantedDate">ag:OriginalPlantedDate</a></strong>
-    <small>
+
       
         
         <span> (type niem-xs:date )</span>
@@ -3185,14 +3121,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -3207,7 +3142,7 @@
   
   <summary>
     <strong><a href="5.1/ag/OriginalReportedAcreageValue">ag:OriginalReportedAcreageValue</a></strong>
-    <small>
+
       
         
         <span> (type ag_codes:OriginalReportedAcreageType )</span>
@@ -3229,14 +3164,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -3251,7 +3185,7 @@
   
   <summary>
     <strong><a href="5.1/ag/OriginatorIdentificationID">ag:OriginatorIdentificationID</a></strong>
-    <small>
+
       
         
         <span> (type ag_codes:OriginatorIdentificationIDType )</span>
@@ -3273,14 +3207,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -3295,7 +3228,7 @@
   
   <summary>
     <strong><a href="5.1/ag/PlantedDateModifiedIndicator">ag:PlantedDateModifiedIndicator</a></strong>
-    <small>
+
       
         
         <span> (type niem-xs:boolean )</span>
@@ -3317,14 +3250,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -3339,7 +3271,7 @@
   
   <summary>
     <strong><a href="5.1/ag/PlantedDateModifiedOtherReasonText">ag:PlantedDateModifiedOtherReasonText</a></strong>
-    <small>
+
       
         
         <span> (type ag_codes:PlantedDateModifiedOtherReasonTextType )</span>
@@ -3361,14 +3293,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -3383,7 +3314,7 @@
   
   <summary>
     <strong><a href="5.1/ag/PlantedDateModifiedReasonCode">ag:PlantedDateModifiedReasonCode</a></strong>
-    <small>
+
       
         
         <span> (type ag_codes:PlantedDateModifiedReasonCodeType )</span>
@@ -3405,14 +3336,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -3427,7 +3357,7 @@
   
   <summary>
     <strong><a href="5.1/ag/PrecisionAgriculturalSubMeterAccuracyIndicator">ag:PrecisionAgriculturalSubMeterAccuracyIndicator</a></strong>
-    <small>
+
       
         
         <span> (type niem-xs:boolean )</span>
@@ -3449,14 +3379,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -3471,7 +3400,7 @@
   
   <summary>
     <strong><a href="5.1/ag/ProducerShare">ag:ProducerShare</a></strong>
-    <small>
+
       
         
         <span> (type ag:ProducerShareType )</span>
@@ -3493,29 +3422,27 @@
 
 
   
+  
+  
+  
+
+  
 
     
     
-    
-    
 
-    
+    <details open>
+      <summary>
+        <strong>All available sub-properties</strong>
+        <span class="badge badge-info">3</span>
+      </summary>
 
-      
-      
+      <div class="div-subProperties">
+        
+        
 
-      <details open>
-        <summary>
-          <strong>All available sub-properties</strong>
-          <span class="badge badge-info">3</span>
-        </summary>
-
-        <div class="div-subProperties">
-          
-          
-
-          
-          
+        
+        
 
   
   
@@ -3531,10 +3458,10 @@
   
 
   
-<details open>
+<details open >
   <summary>
     <span class="summary-heading">Properties directly contained by ag:ProducerShareType</span>
-    <span class="badge badge-info badge-pill">3 </span>
+    <span class="badge badge-info">3 </span>
   </summary>
   <br/>
   <ul class="list-group">
@@ -3566,10 +3493,9 @@
 
 
 
-        </div>
-      </details>
-    
-  
+        
+      </div>
+    </details>
 
 </details>
 
@@ -3584,7 +3510,7 @@
   
   <summary>
     <strong><a href="5.1/ag/ProducerShareAugmentationPoint">ag:ProducerShareAugmentationPoint</a></strong>
-    <small>
+
       
         
         <span> (abstract) </span>
@@ -3608,14 +3534,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -3630,7 +3555,7 @@
   
   <summary>
     <strong><a href="5.1/ag/ProducerSharePercent">ag:ProducerSharePercent</a></strong>
-    <small>
+
       
         
         <span> (type nc:PercentType )</span>
@@ -3652,14 +3577,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -3674,7 +3598,7 @@
   
   <summary>
     <strong><a href="5.1/ag/ProductIntendedUseCode">ag:ProductIntendedUseCode</a></strong>
-    <small>
+
       
         
         <span> (type ag_codes:ProductIntendedUseType )</span>
@@ -3696,14 +3620,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -3718,7 +3641,7 @@
   
   <summary>
     <strong><a href="5.1/ag/ProductPlantingCode">ag:ProductPlantingCode</a></strong>
-    <small>
+
       
         
         <span> (type ag_codes:ProductPlantingCodeType )</span>
@@ -3740,14 +3663,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -3762,7 +3684,7 @@
   
   <summary>
     <strong><a href="5.1/ag/ReportedAcreageModifiedIndicator">ag:ReportedAcreageModifiedIndicator</a></strong>
-    <small>
+
       
         
         <span> (type niem-xs:boolean )</span>
@@ -3784,14 +3706,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -3806,7 +3727,7 @@
   
   <summary>
     <strong><a href="5.1/ag/ReportedAcreageModifiedOtherReasonText">ag:ReportedAcreageModifiedOtherReasonText</a></strong>
-    <small>
+
       
         
         <span> (type ag_codes:ReportedAcreageModifiedOtherReasonTextType )</span>
@@ -3828,14 +3749,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -3850,7 +3770,7 @@
   
   <summary>
     <strong><a href="5.1/ag/ReportedAcreageModifiedReasonCode">ag:ReportedAcreageModifiedReasonCode</a></strong>
-    <small>
+
       
         
         <span> (type ag_codes:ReportedAcreageModifiedReasonCodeType )</span>
@@ -3872,14 +3792,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -3894,7 +3813,7 @@
   
   <summary>
     <strong><a href="5.1/ag/SubfieldNumberID">ag:SubfieldNumberID</a></strong>
-    <small>
+
       
         
         <span> (type ag_codes:SubfieldNumberType )</span>
@@ -3916,14 +3835,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -3938,7 +3856,7 @@
   
   <summary>
     <strong><a href="5.1/ag/TaxIdentificationCategoryCode">ag:TaxIdentificationCategoryCode</a></strong>
-    <small>
+
       
         
         <span> (type ag_codes:TaxIdentificationCategoryCodeType )</span>
@@ -3960,14 +3878,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -3982,7 +3899,7 @@
   
   <summary>
     <strong><a href="5.1/ag/TaxIdentificationID">ag:TaxIdentificationID</a></strong>
-    <small>
+
       
         
         <span> (type ag_codes:TaxIdentificationIDType )</span>
@@ -4004,14 +3921,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -4026,7 +3942,7 @@
   
   <summary>
     <strong><a href="5.1/ag/TractCropAcreage">ag:TractCropAcreage</a></strong>
-    <small>
+
       
         
         <span> (type ag:TractCropAcreageType )</span>
@@ -4048,29 +3964,27 @@
 
 
   
+  
+  
+  
+
+  
 
     
     
-    
-    
 
-    
+    <details open>
+      <summary>
+        <strong>All available sub-properties</strong>
+        <span class="badge badge-info">3</span>
+      </summary>
 
-      
-      
+      <div class="div-subProperties">
+        
+        
 
-      <details open>
-        <summary>
-          <strong>All available sub-properties</strong>
-          <span class="badge badge-info">3</span>
-        </summary>
-
-        <div class="div-subProperties">
-          
-          
-
-          
-          
+        
+        
 
   
   
@@ -4086,10 +4000,10 @@
   
 
   
-<details open>
+<details open >
   <summary>
     <span class="summary-heading">Properties directly contained by ag:TractCropAcreageType</span>
-    <span class="badge badge-info badge-pill">3 </span>
+    <span class="badge badge-info">3 </span>
   </summary>
   <br/>
   <ul class="list-group">
@@ -4121,10 +4035,9 @@
 
 
 
-        </div>
-      </details>
-    
-  
+        
+      </div>
+    </details>
 
 </details>
 
@@ -4139,7 +4052,7 @@
   
   <summary>
     <strong><a href="5.1/ag/TractCropAcreageAugmentationPoint">ag:TractCropAcreageAugmentationPoint</a></strong>
-    <small>
+
       
         
         <span> (abstract) </span>
@@ -4163,14 +4076,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
@@ -4185,7 +4097,7 @@
   
   <summary>
     <strong><a href="5.1/ag/TractNumberID">ag:TractNumberID</a></strong>
-    <small>
+
       
         
         <span> (type ag_codes:TractNumberIDType )</span>
@@ -4207,14 +4119,13 @@
 
 
   
-
-    
-    
-    
-    
-
-    
   
+  
+  
+
+  
+      </div>
+    </details>
 
 </details>
 
